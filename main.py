@@ -45,7 +45,7 @@ class MainWindow(QMainWindow):
 
 		# adding actions to the tool bar
 		# creating a action for back
-		back_btn = QAction(QIcon("./icons/back.png"), "Back", self)
+		back_btn = QAction(QIcon("./back.png"), "Back", self)
 
 		# setting status tip
 		back_btn.setStatusTip("Back to previous page")
@@ -58,7 +58,7 @@ class MainWindow(QMainWindow):
 		navtb.addAction(back_btn)
 
 		# similarly for forward action
-		next_btn = QAction(QIcon("./icons/next.png"), "Forward", self)
+		next_btn = QAction(QIcon("./next.png"), "Forward", self)
 		next_btn.setStatusTip("Forward to next page")
 
 		# adding action to the next button
@@ -67,7 +67,7 @@ class MainWindow(QMainWindow):
 		navtb.addAction(next_btn)
 
 		# similarly for reload action
-		reload_btn = QAction(QIcon("./icons/reload.png"), "Reload", self)
+		reload_btn = QAction(QIcon("./reload.png"), "Reload", self)
 		reload_btn.setStatusTip("Reload page")
 
 		# adding action to the reload button
@@ -76,7 +76,7 @@ class MainWindow(QMainWindow):
 		navtb.addAction(reload_btn)
 
 		# similarly for home action
-		home_btn = QAction(QIcon("./icons/home.png"), "Home", self)
+		home_btn = QAction(QIcon("./home.png"), "Home", self)
 		home_btn.setStatusTip("Go home")
 		home_btn.triggered.connect(self.navigate_home)
 		navtb.addAction(home_btn)
@@ -94,7 +94,7 @@ class MainWindow(QMainWindow):
 		navtb.addWidget(self.urlbar)
 
 		# adding stop action to the tool bar
-		stop_btn = QAction(QIcon("./icons/stop.png"), "Stop", self)
+		stop_btn = QAction(QIcon("./stop.png"), "Stop", self)
 		stop_btn.setStatusTip("Stop loading current page")
 
 		# adding action to the stop button
